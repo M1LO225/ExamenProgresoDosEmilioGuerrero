@@ -16,10 +16,10 @@
                 Icon="https://images.vexels.com/content/205069/preview/telephone-handset-blue-icon-8bf147.png"/>
             
             <ShellContent
-            Title="Home"
+            Title="Nombre"
             ContentTemplate="{DataTemplate local:GridPage}"
             Route="MainPage"
-                Icon="https://e7.pngegg.com/pngimages/81/570/png-clipart-profile-logo-computer-icons-user-user-blue-heroes-thumbnail.png"/>
+                Icon="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
         </Tab>
     </TabBar>
 
@@ -27,5 +27,10 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        Title="Nombre"
+        ContentTemplate="{DataTemplate local:GridPage}"
+        Route="MainPage"
+        Icon="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
 
 </Shell>

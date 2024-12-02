@@ -26,6 +26,7 @@
 
         </Label>
         <Label
+            x:Name="apellido1"
             Grid.Row="1"
             Grid.Column="0"
             Text="Guerrero"
@@ -35,6 +36,7 @@
 
         </Label>
         <Label
+            x:Name="apellido2"
             Grid.Row="1"
             Grid.Column="1"
             Text="Argoti"

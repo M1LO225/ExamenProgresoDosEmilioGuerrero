@@ -7,6 +7,37 @@
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>
+    
+    <Style TargetType="Label" x:Key="apellido1">
+        <Setter Property="TextColor">
+            <VisualStateGroupList>
+                <VisualStateGroup
+                    x:Name="eguerrero_label1Style">
+                    <VisualState x:Name="eguerrero_labelApellidoStyle">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="Red"></Setter>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Label" x:Key="apellido2">
+        <Setter Property="TextColor">
+            <VisualStateGroupList>
+                <VisualStateGroup
+                x:Name="eguerrero_label2Style">
+                    <VisualState x:Name="eguerrero_labelApellido2Style">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="Red"></Setter>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
 
     <Style TargetType="IndicatorView">
         <Setter Property="IndicatorColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}"/>
