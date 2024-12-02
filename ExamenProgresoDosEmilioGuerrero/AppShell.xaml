@@ -7,6 +7,22 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ExamenProgresoDosEmilioGuerrero">
 
+    <TabBar>
+        <Tab>
+            <ShellContent
+            Title="Recarga Telefonica"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage"
+                Icon="https://images.vexels.com/content/205069/preview/telephone-handset-blue-icon-8bf147.png"/>
+            
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:GridPage}"
+            Route="MainPage"
+                Icon="https://e7.pngegg.com/pngimages/81/570/png-clipart-profile-logo-computer-icons-user-user-blue-heroes-thumbnail.png"/>
+        </Tab>
+    </TabBar>
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
