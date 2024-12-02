@@ -1,24 +1,28 @@
-﻿namespace ExamenProgresoDosEmilioGuerrero
+﻿using ExamenProgresoDosEmilioGuerrero.Interfaces;
+using ExamenProgresoDosEmilioGuerrero.Modelos;
+using ExamenProgresoDosEmilioGuerrero.Repositorio;
+
+namespace ExamenProgresoDosEmilioGuerrero
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        IUsuarioRecarga _usuarioRecargaRepository;
+        UsuarioRecarga usuario = new UsuarioRecarga();
 
         public MainPage()
         {
+            _usuarioRecargaRepository = new UsuarioRecargaPorArchivoRepository();
             InitializeComponent();
+
+            usuario = _usuarioRecargaRepository.DevuelveUsuario();
+            BindingContext = usuario;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+        private void GuardarUsuario_Clicked(object sender, EventArgs e)
         {
-            count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
         }
     }
 
